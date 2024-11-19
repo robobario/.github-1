@@ -17,9 +17,9 @@ The release PAT requires permissions:
 - Read and Write access to code, issues, and pull requests for all current and future repositories owned by this
   organization
 
-### Sonar PAT
+### Dependencies PAT
 
-The sonar PAT requires permissions:
+The dependencies PAT requires permissions:
 - Read access to metadata for all current and future repositories owned by this organization
 - Read and Write access to code and pull requests for all current and future repositories owned by your organization
 
@@ -29,12 +29,12 @@ The Organization sets some Actions secrets so they are available to all reposito
 
 | Name                 | Description                                                         | Example       |
 |----------------------|---------------------------------------------------------------------|---------------|
-| DEPENDENCY_TOKEN     | ???                                                                 | secret :lock: |
+| DEPENDENCY_TOKEN     | the [Dependencies PAT](#dependencies-pat)                           | secret :lock: |
 | IMAGE_REPO_HOSTNAME  | the hostname of the container registry for streamshub public images | quay.io       |
 | IMAGE_REPO_NAMESPACE | the namespace streamshub images are pushed to                       | streamshub    |
 | IMAGE_REPO_USERNAME  | the username for the container registry                             | secret :lock: |
 | IMAGE_REPO_PASSWORD  | the password corresponding to IMAGE_REPO_USERNAME                   | secret :lock: |
 | RELEASE_TOKEN        | the [Release PAT](#release-pat)                                     | secret :lock: |
-| SONAR_TOKEN          | the [Sonar PAT](#sonar-pat)                                         | secret :lock: |
+| SONAR_TOKEN          | a sonarcloud API token                                              | secret :lock: |
 
 
